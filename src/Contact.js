@@ -45,7 +45,7 @@ and the message is ${data.message}` )
  <form onSubmit={formSubmit}>
  <div className="row mb-3">
     <label  className="form-label px-0 font-weight-bold">Full Name</label>
-      <input type="text" className="form-control"
+      <input type="text" className="form-control" required
        name="fullname" 
        value={data.fullname}
        onChange={InputEvent} 
@@ -54,7 +54,7 @@ and the message is ${data.message}` )
 
   <div className="row mb-3">
     <label className="form-label px-0 font-weight-bold">Email Address</label>
-      <input type="email" className="form-control" 
+      <input type="email" className="form-control" required
        name="email" 
        value={data.email}
        onChange={InputEvent} 
@@ -63,7 +63,7 @@ and the message is ${data.message}` )
 
   <div className="row mb-3">
   <label className="form-label px-0 font-weight-bold">Phone</label>
-  <input type="phone" className="form-control"
+  <input type="phone" className="form-control" required
    name="phone" 
    value={data.phone}
    onChange={InputEvent} 
@@ -73,7 +73,7 @@ and the message is ${data.message}` )
   <div className="row mb-3">
   <label className="form-label px-0 font-weight-bold">Message</label>
   <textarea className="form-control"
-  name="message" 
+  name="message" required
   value={data.message}
   onChange={InputEvent} 
   placeholder="Enter Your Message" rows="3"></textarea>
